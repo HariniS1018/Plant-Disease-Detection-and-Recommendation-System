@@ -6,25 +6,20 @@ venv/
 __pycache__/
 *.pyc
 
-# Ignore text documents (including .txt, .rtf, etc.)
+# Ignore documents
 *.txt
-*.rtf  # Add other text document extensions as needed
-
-# Ignore other common document formats (if you don't want them)
+*.rtf
 *.doc
 *.docx
 *.odt
 
-# Ignore image files (if you only want specific image types)
-# If you want to include .jpg files but exclude others, remove this line:
-*jpg #This will ignore all files ending with jpg
-!*.jpg #This will include all files ending with jpg
-# *.png
-# *.gif
-# *.jpeg
+# Ignore image files
+*jpg
+*.png
+*.gif
+*.jpeg
 
 # Ignore system files (often hidden files)
-.DS_Store  # macOS
 Thumbs.db   # Windows
 
 # Ignore temporary files or backup files
@@ -37,16 +32,9 @@ Thumbs.db   # Windows
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Any other files or folders you want to exclude
-# Example:
-my_secret_folder/  # Ignore an entire folder
-config.ini        # Ignore a specific file
-
-# If you want to keep specific files within an ignored directory, use the "!" (negate) operator.
-# For example, to keep a "README.md" file in the "docs" folder:
-# docs/
-# !docs/README.md
-
-# If you want to ignore all files in a directory EXCEPT a specific file, you can do this:
-# data/
-# !data/important_data.csv
+# Ignore an entire folder
+text_documents/
+unseen_images/
+references/
+dataset/
+config.ini
